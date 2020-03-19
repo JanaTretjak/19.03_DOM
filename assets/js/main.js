@@ -41,7 +41,7 @@ document.getElementById("button").addEventListener("click", () => {
     for (let i = 0; i < document.getElementById("farbeAuswahlen").options.length; i++) {
         if (i == document.getElementById("farbeAuswahlen").selectedIndex) {
             event.preventDefault();
-            console.log(document.getElementById("farbeAuswahlen").options[i].value.toLowerCase().split(" ").join(""))
+            console.log(document.getElementById("farbeAuswahlen").options[i].value.split(" ").join(""))
             return document.body.style.background = document.getElementById("farbeAuswahlen").options[i].value.toLowerCase().split(" ").join("")
         }
 
